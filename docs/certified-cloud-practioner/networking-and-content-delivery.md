@@ -192,16 +192,70 @@ Amazon VPC allows you to provision a logically isolated section of the AWS Cloud
 
 | Attribute | Security Groups | Network ACLs |
 | --------- | --------------- | ------------ |
-| Scope | Attached to individual instances. | Applied at the subnet level, affecting all instances within it. |
-| Supported Rules | Only allow rules; implicit deny for all other traffic. | Both allow and deny rules can be explicitly defined. |
+| Scope | Individual instances | Subnet level, affecting all instances within it. |
+| Allow rules | Yes | Yes |
+| Deny rules | No | No |
 | State | Stateful | Stateless |
-| Order of Rules | Rules are evaluated collectively; no specific order. | Rules are evaluated in ascending order by rule number. |
-| Default Behavior | Deny all inbound traffic and allow all outbound traffic | Allow all inbound and outbound traffic |
+| Order of Rules | Evaluated collectively; Unordered. | Evaluated in ascending order by rule number. |
+| Default Inbound Behavior | Deny all inbound traffic | Allow all inbound |
+| Default Outbound Behavior | Allow all outbound traffic | Allow outbound traffic |
 | Customization | Control inbound/outbound traffic control | Broader subnet-level restrictions |
 | Use Case | Managing traffic to individual instances | Additional layer of defense at the subnet level |
 
 ## Amazon Route 53
 
-- 
+- Highly available and scalable Domain Name System (DNS) web service
+- Designed for routing end users to Internet applications by translating domain names into IP addresses.
+- Supports both IPv4 and IPv6.
+
+### Key Features
+
+- **DNS Resolution:** Translates domain names like `www.google.com` into their corresponding IP addresses.
+- **Health Checking:** Monitors the health of your resources and routes traffic only to healthy endpoints.
+- **Traffic Management:** Offers various routing policies for managing traffic globally.
+- **Domain Registration:** Allows you to register domain names.
+
+### DNS Resolution Process
+
+1. A user, like Bob, requests the IP address of `www.google.com`.
+1. The DNS resolver queries Amazon Route 53 for the IP address.
+1. Route 53 returns the IP address of www.google.com.
+1. The DNS resolver provides Bob with the IP address.
+
+### Amazon Route 53 Supported Routing
+
+- **Simple Routing:** Ideal for single-resource environments.
+- **Weighted Round Robin Routing:** Assigns weights to route traffic proportionally across multiple resources.
+- **Latency Routing:** Routes traffic based on the lowest network latency for your end user.
+- **Geolocation Routing:** Routes traffic based on the geographic location of your users.
+- **Geoproximity Routing:** Routes traffic based on the geographic location of your resources and users.
+- **Failover Routing:** Automatically routes traffic to a backup resource when the primary one is unavailable.
+- **Multivalue Answer Routing:** Responds to DNS queries with multiple healthy resources.
 
 ## Amazon CloudFront
+
+- Amazon CloudFront is a fast content delivery network (CDN) service
+- Securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.
+
+### Amazon CloudFront Key Characteristics
+
+- **Global Network:** Consists of edge locations and regional edge caches for efficient content delivery.
+- **Edge Locations:** Serve popular content directly to users nearby.
+- **Regional Edge Cache:** Stores less frequently accessed content, acting as an intermediary cache layer.
+- **Dynamic and Static Content Delivery:** Optimizes the delivery of both static and dynamic content.
+- **Integration with AWS Services:** Deeply integrated with AWS services like S3, EC2, and AWS Shield for enhanced functionality.
+
+### Amazon CloudFront Benefits
+
+- **Performance:** Fast delivery of content with reduced latency.
+- **Security:** Enhanced security features at the edge locations.
+- **Programmability:** Customizable and programmable CDN solutions.
+- **AWS Integration:** Seamless integration with AWS services and infrastructure.
+- **Cost-Effectiveness:** Pay-as-you-go pricing model, without upfront costs.
+
+### Amazon CloudFront Pricing
+
+- **Data Transfer Out:** Based on the volume of data transferred out from CloudFront to end users.
+- **HTTP(S) Requests:** Charges apply for the number of HTTP(S) requests made.
+- **Invalidation Requests:** The first 1000 paths each month are free; subsequent paths incur a charge per path.
+- **Dedicated IP Custom SSL:** Additional charges may apply for custom SSL certificates.
