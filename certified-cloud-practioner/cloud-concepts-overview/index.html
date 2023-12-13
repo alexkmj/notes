@@ -1,0 +1,800 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.op.sg/certified-cloud-practioner/cloud-concepts-overview/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Cloud Concepts Overview - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cloud-concepts-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cloud Concepts Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Certified Cloud Practioner
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-cloud-computing" class="md-nav__link">
+    Introduction to Cloud Computing
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to Cloud Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types-of-cloud-computing" class="md-nav__link">
+    Types of Cloud Computing
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Cloud Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-as-a-service-saas" class="md-nav__link">
+    Software as a Service (SaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-as-a-service-paas" class="md-nav__link">
+    Platform as a Service (PaaS)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-as-a-service-iaas" class="md-nav__link">
+    Infrastructure as a Service (IaaS)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-computing-deployment-models" class="md-nav__link">
+    Cloud Computing Deployment Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Computing Deployment Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-cloud" class="md-nav__link">
+    Public Cloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#private-cloud" class="md-nav__link">
+    Private Cloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hybrid" class="md-nav__link">
+    Hybrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#traditional-it-vs-aws" class="md-nav__link">
+    Traditional IT vs AWS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advantages-of-cloud-computing" class="md-nav__link">
+    Advantages of Cloud Computing
+  </a>
+  
+    <nav class="md-nav" aria-label="Advantages of Cloud Computing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agility" class="md-nav__link">
+    Agility
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elasticity" class="md-nav__link">
+    Elasticity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-saving" class="md-nav__link">
+    Cost Saving
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-globally-in-minutes" class="md-nav__link">
+    Deploy Globally in Minutes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-amazon-web-services-aws" class="md-nav__link">
+    Introduction to Amazon Web Services (AWS)
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to Amazon Web Services (AWS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-aws" class="md-nav__link">
+    What is AWS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-services" class="md-nav__link">
+    AWS Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-interaction" class="md-nav__link">
+    AWS Interaction
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-aws-cloud-adoption-framework-aws-caf" class="md-nav__link">
+    The AWS Cloud Adoption Framework (AWS CAF)
+  </a>
+  
+    <nav class="md-nav" aria-label="The AWS Cloud Adoption Framework (AWS CAF)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#business-capabilities" class="md-nav__link">
+    Business Capabilities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-capabilities" class="md-nav__link">
+    Technical Capabilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-cloud-services-offerings" class="md-nav__link">
+    Core Cloud Services Offerings
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Cloud Services Offerings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compute" class="md-nav__link">
+    Compute
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#networking" class="md-nav__link">
+    Networking
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-web-services-overview" class="md-nav__link">
+    Amazon Web Services Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    Best Practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dedicated-vs-vms-vs-containers-vs-functions" class="md-nav__link">
+    Dedicated vs VMs vs Containers vs Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Dedicated vs VMs vs Containers vs Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dedicated-machines" class="md-nav__link">
+    Dedicated Machines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtual-machines" class="md-nav__link">
+    Virtual Machines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containers" class="md-nav__link">
+    Containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cloud-concepts-overview">Cloud Concepts Overview</h1>
+<blockquote>
+<p>Cloud computing is the <strong>on-demand</strong> delivery of computing services over the <strong>internet</strong> with <strong>pay-as-you-go</strong> pricing.</p>
+</blockquote>
+<h2 id="introduction-to-cloud-computing">Introduction to Cloud Computing</h2>
+<h3 id="types-of-cloud-computing">Types of Cloud Computing</h3>
+<h4 id="software-as-a-service-saas">Software as a Service (SaaS)</h4>
+<ul>
+<li>Fully managed products.</li>
+<li>Least control over IT resource.</li>
+<li>Suitable for end-users.</li>
+<li>Service provider runs and maintains the software.</li>
+<li>Focus is on using the software.</li>
+<li>Users don't need to conern themselves with the maintenace or instrastructure.</li>
+</ul>
+<h4 id="platform-as-a-service-paas">Platform as a Service (PaaS)</h4>
+<ul>
+<li>Abstracts underlying infrastructure management.</li>
+<li>Medium control over IT resource.</li>
+<li>Suitable for developers.</li>
+<li>Eliminates the eneed to handle hardware and operation system.</li>
+<li>Allow developers to concentrate on application development.</li>
+</ul>
+<h4 id="infrastructure-as-a-service-iaas">Infrastructure as a Service (IaaS)</h4>
+<ul>
+<li>Fundamental cloud components.</li>
+<li>Most control over IT resource.</li>
+<li>Suitable for personnels seeking control and customization.</li>
+<li>High flexibility and control over resources.</li>
+<li>Includes networking, computers, and data storage.</li>
+<li>No involvement of data centers or hardwares is required.</li>
+</ul>
+<h3 id="cloud-computing-deployment-models">Cloud Computing Deployment Models</h3>
+<h4 id="public-cloud">Public Cloud</h4>
+<ul>
+<li>Services hosted and managed by the Cloud Service Provider (CSP).</li>
+<li>Also known as <strong>Cloud-Native</strong> or <strong>Cloud First</strong>.</li>
+<li>Suitable for new projects or those transitioning from a Virtual Private Server (VPS) to a CSP.</li>
+</ul>
+<h4 id="private-cloud">Private Cloud</h4>
+<ul>
+<li>Services run on a company's own data centers.</li>
+<li>Also known as <strong>On-Premise</strong>.</li>
+<li>May use software like OpenStack.</li>
+<li>Used when organizations can't run on the cloud due to strict regulatory compliance or the sheer size of their organization.</li>
+</ul>
+<h4 id="hybrid">Hybrid</h4>
+<ul>
+<li>Combination of <strong>On-Premise</strong> and <strong>Cloud Service Provider</strong>.</li>
+<li>Ideal for organizations with their own data centers, or those unable to move everything to the cloud due to migration efforts or security compliance.</li>
+</ul>
+<h4 id="traditional-it-vs-aws">Traditional IT vs AWS</h4>
+<table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Tradition Examples</th>
+<th>AWS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Security</td>
+<td>Firewalls, ACLs, Administrators</td>
+<td>Security Groups, Network ACLs, IAM</td>
+</tr>
+<tr>
+<td>Networking</td>
+<td>Router, Network Pipeline, Switch</td>
+<td>Elastic Load Balancing, Amazon VPC</td>
+</tr>
+<tr>
+<td>Compute</td>
+<td>On-premise servers</td>
+<td>AMI, EC2</td>
+</tr>
+<tr>
+<td>Storage and Database</td>
+<td>DAS, SAN, NAS, RDBMS</td>
+<td>Amazon EBS, Amazon EFS, Amazon S3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advantages-of-cloud-computing">Advantages of Cloud Computing</h2>
+<h3 id="agility">Agility</h3>
+<ul>
+<li>Easy access to a range of technology.</li>
+<li>Rapid provisioning of resources.</li>
+<li>Reduces time from idea to implementation.</li>
+</ul>
+<h3 id="elasticity">Elasticity</h3>
+<ul>
+<li>Eliminates the need for upfront resource over-provisioning.</li>
+<li>Provisions resources based on actual needs to avoid waste.</li>
+<li>Scalability allows for instant adjustments to resource capacity.</li>
+</ul>
+<h3 id="cost-saving">Cost Saving</h3>
+<ul>
+<li>Shifts from fixed expenses to variable expenses based on actual usage.</li>
+<li>Typically lower expenses due to economies of scale.</li>
+<li>Eliminates the need for maintaining data centers and physical servers.</li>
+<li>Reduces upfront investment.</li>
+</ul>
+<h3 id="deploy-globally-in-minutes">Deploy Globally in Minutes</h3>
+<ul>
+<li>Access to global infrastructure.</li>
+<li>Enables rapid expansion and deployment in multiple locations.</li>
+<li>Reduces latency and improves end-user experience.</li>
+</ul>
+<h2 id="introduction-to-amazon-web-services-aws">Introduction to Amazon Web Services (AWS)</h2>
+<blockquote>
+<p>AWS is a web service offering a standardized format for API interactions and a secure cloud platform with a broad set of global cloud-based products.</p>
+</blockquote>
+<h3 id="what-is-aws">What is AWS</h3>
+<ul>
+<li>A secure cloud platform offering a broad set of global cloud-based products.</li>
+<li>Provides on-demand resources.</li>
+<li>Flexible and easy to use.</li>
+<li>Pay based on the duration of the services used.</li>
+<li>Products can be used together like building blocks.</li>
+</ul>
+<h3 id="aws-services">AWS Services</h3>
+<p>List of services provided by AWS.</p>
+<h3 id="aws-interaction">AWS Interaction</h3>
+<p>Methods to interact with AWS:</p>
+<ul>
+<li>AWS Management Console</li>
+<li>Command Line Interface (AWS CLI)</li>
+<li>Software Development Kits (SDKs)</li>
+</ul>
+<h2 id="the-aws-cloud-adoption-framework-aws-caf">The AWS Cloud Adoption Framework (AWS CAF)</h2>
+<p>AWS CAF offers guidance and best practices for cloud adoption, with six core perspectives divided into business and technical capabilities.</p>
+<h3 id="business-capabilities">Business Capabilities</h3>
+<ol>
+<li><strong>Business:</strong> Aligning IT with business needs.</li>
+<li><strong>People:</strong> Focus on training, staffing, and organizational changes.</li>
+<li><strong>Governance:</strong> Aligning IT strategy with business strategy and goals.</li>
+</ol>
+<h3 id="technical-capabilities">Technical Capabilities</h3>
+<ol>
+<li><strong>Platform:</strong> Understanding and communicating IT systems and their relationships. Describing the target state environment architecture.</li>
+<li><strong>Security:</strong> Ensuring security objectives are met.</li>
+<li><strong>Operations:</strong> Defining day-to-day, quarterly, and annual business operations.</li>
+</ol>
+<h2 id="core-cloud-services-offerings">Core Cloud Services Offerings</h2>
+<h3 id="compute">Compute</h3>
+<blockquote>
+<p>Provides a virtual computer to run applications, programs, and code.</p>
+</blockquote>
+<h3 id="networking">Networking</h3>
+<blockquote>
+<p>Offers a virtual network for internet connections or network isolations between services or outbound to the internet.</p>
+</blockquote>
+<h3 id="storage">Storage</h3>
+<blockquote>
+<p>Acts as a virtual hard drive for file storage.</p>
+</blockquote>
+<h3 id="database">Database</h3>
+<blockquote>
+<p>Provides a virtual database for data storage.</p>
+</blockquote>
+<h2 id="amazon-web-services-overview">Amazon Web Services Overview</h2>
+<blockquote>
+<p>Amazon Web Services (AWS) is a <strong>Cloud Service Provider</strong> (CSP) that provides <strong>Infrastructure as a Service</strong> (IaaS), among other services.</p>
+</blockquote>
+<p>AWS services can be mapped to the 4 core cloud service offerings as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Core Cloud Service</th>
+<th>Amazon Web Services</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compute</td>
+<td><strong>EC2</strong> Virtual Machines</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td><strong>EBS</strong> Virtual Hard Drives</td>
+</tr>
+<tr>
+<td>Database</td>
+<td><strong>RDS</strong> SQL Databases</td>
+</tr>
+</tbody>
+</table>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li>It is recommended to run a single application per instance to ensure efficient resource utilization and easier scalability and prevent dependency related issues.</li>
+</ul>
+<h2 id="dedicated-vs-vms-vs-containers-vs-functions">Dedicated vs VMs vs Containers vs Functions</h2>
+<h3 id="dedicated-machines">Dedicated Machines</h3>
+<ul>
+<li>Dedicated machines are <strong>physical servers</strong> utilized exclusively by a <strong>single customer</strong>.</li>
+<li>The capacity is <strong>fixed and predetermined</strong>.</li>
+<li>There's a risk of <strong>overpaying for underutilized</strong> resources.</li>
+<li>Scaling resources requires <strong>physical hardware changes</strong>, often involving migration.</li>
+<li>Limited by the capabilities of the <strong>host operating system</strong>.</li>
+</ul>
+<h3 id="virtual-machines">Virtual Machines</h3>
+<ul>
+<li>Run on a hypervisor, an underlying software layer that manages multiple virtual machines.</li>
+<li>A single physical server can be shared by multiple customers.</li>
+<li>Customers pay for only a fraction of the server, reducing costs for underutilized resources.</li>
+<li>Virtual Machines are limited by the guest operating system.</li>
+<li>Simplifies exporting or importing images for migration.</li>
+<li>Offers easier vertical and horizontal scaling options.</li>
+</ul>
+<h3 id="containers">Containers</h3>
+<ul>
+<li>Containers operate on top of Virtual Machines or Dedicated Machines.</li>
+<li>The <strong>Docker Daemon</strong> is a common software layer enabling multiple containers to run concurrently.</li>
+<li>Containers share the same underlying OS kernel, optimizing resource utilization.</li>
+<li>More cost-effective, maximizing the use of available capacity.</li>
+<li>Allow running multiple applications side by side without inter-application dependency or configuration conflicts.</li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li>Functions run in a managed container environment, often referred to as Serverless Computing.</li>
+<li>Users upload code and specify memory and execution duration.</li>
+<li>Responsibility is limited to the code and data, not the underlying infrastructure.</li>
+<li>Cost-effective, as charges are based only on the execution time of the code.</li>
+<li>Cold starts can be a side-effect, causing latency during the initial run of a function.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

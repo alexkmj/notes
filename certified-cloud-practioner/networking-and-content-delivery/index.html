@@ -1,0 +1,1196 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.op.sg/certified-cloud-practioner/networking-and-content-delivery/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Networking and Content Delivery - My Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#networking-and-content-delivery" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Networking and Content Delivery
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    My Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Certified Cloud Practioner
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#networking-basics" class="md-nav__link">
+    Networking Basics
+  </a>
+  
+    <nav class="md-nav" aria-label="Networking Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classless-inter-domain-routing-cidr" class="md-nav__link">
+    Classless Inter-Domain Routing (CIDR)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-systems-interconnection-osi" class="md-nav__link">
+    Open Systems Interconnection (OSI)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-vpc" class="md-nav__link">
+    Amazon VPC
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon VPC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpc-characteristics" class="md-nav__link">
+    VPC Characteristics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subnets" class="md-nav__link">
+    Subnets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ip-addressing" class="md-nav__link">
+    IP Addressing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reserved-ip-address" class="md-nav__link">
+    Reserved IP Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-ip-address-types" class="md-nav__link">
+    Public IP Address Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Public IP Address Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#public-ipv4-address" class="md-nav__link">
+    Public IPv4 Address
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elastic-ip-address" class="md-nav__link">
+    Elastic IP Address
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elastic-network-interface-eni" class="md-nav__link">
+    Elastic Network Interface (ENI)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route-tables-and-routes" class="md-nav__link">
+    Route Tables and Routes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpc-networking" class="md-nav__link">
+    VPC Networking
+  </a>
+  
+    <nav class="md-nav" aria-label="VPC Networking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#internet-gateway" class="md-nav__link">
+    Internet Gateway
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-address-translation-nat-gateway" class="md-nav__link">
+    Network Address Translation (NAT) Gateway
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vpc-sharing" class="md-nav__link">
+    VPC Sharing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vpc-peering" class="md-nav__link">
+    VPC Peering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-site-to-site-vpn" class="md-nav__link">
+    AWS Site-to-Site VPN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-direct-connect" class="md-nav__link">
+    AWS Direct Connect
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vpc-endpoints" class="md-nav__link">
+    VPC Endpoints
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aws-transit-gateway" class="md-nav__link">
+    AWS Transit Gateway
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpc-security" class="md-nav__link">
+    VPC Security
+  </a>
+  
+    <nav class="md-nav" aria-label="VPC Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-groups" class="md-nav__link">
+    Security Groups
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inbound-rules-table" class="md-nav__link">
+    Inbound Rules Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outbound-rules-table" class="md-nav__link">
+    Outbound Rules Table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-security-groups" class="md-nav__link">
+    Custom Security Groups
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Security Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inbound-rules-table_1" class="md-nav__link">
+    Inbound Rules Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outbound-rules-table_1" class="md-nav__link">
+    Outbound Rules Table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-access-control-lists-network-acl" class="md-nav__link">
+    Network Access Control Lists (Network ACL)
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Access Control Lists (Network ACL)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inbound-rules-table_2" class="md-nav__link">
+    Inbound Rules Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outbound-rules-table_2" class="md-nav__link">
+    Outbound Rules Table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-network-acl" class="md-nav__link">
+    Custom Network ACL
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Network ACL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inbound-rules-table_3" class="md-nav__link">
+    Inbound Rules Table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outbound-rules-table_3" class="md-nav__link">
+    Outbound Rules Table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-groups-vs-network-acl" class="md-nav__link">
+    Security Groups vs Network ACL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-route-53" class="md-nav__link">
+    Amazon Route 53
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon Route 53">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    Key Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-resolution-process" class="md-nav__link">
+    DNS Resolution Process
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-route-53-supported-routing" class="md-nav__link">
+    Amazon Route 53 Supported Routing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#amazon-cloudfront" class="md-nav__link">
+    Amazon CloudFront
+  </a>
+  
+    <nav class="md-nav" aria-label="Amazon CloudFront">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amazon-cloudfront-key-characteristics" class="md-nav__link">
+    Amazon CloudFront Key Characteristics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-cloudfront-benefits" class="md-nav__link">
+    Amazon CloudFront Benefits
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amazon-cloudfront-pricing" class="md-nav__link">
+    Amazon CloudFront Pricing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="networking-and-content-delivery">Networking and Content Delivery</h1>
+<h2 id="networking-basics">Networking Basics</h2>
+<h3 id="classless-inter-domain-routing-cidr">Classless Inter-Domain Routing (CIDR)</h3>
+<ul>
+<li>CIDR is a method for allocating IP addresses and routing IP packets.</li>
+<li>It is used to create unique identifiers for networks and individual devices.</li>
+<li>The CIDR notation includes an IP address and a suffix indicating the number of bits used for the network portion.</li>
+</ul>
+<p>For example, in <code>198.51.100.24/24</code></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Decimal</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP</td>
+<td><code>198.51.100.24</code></td>
+<td><code>11000110 00110011 01100100 00011000</code></td>
+</tr>
+<tr>
+<td>Bit Mask</td>
+<td><code>198.51.100.0</code></td>
+<td><code>11111111 11111111 11111111 00000000</code></td>
+</tr>
+<tr>
+<td>Network Address</td>
+<td><code>198.51.100.0</code></td>
+<td><code>11111111 11111111 11111111 00000000</code></td>
+</tr>
+<tr>
+<td>Broadcast Address</td>
+<td><code>198.51.100.255</code></td>
+<td><code>11000110 00110011 01100100 11111111</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>The subnet mask <code>/24</code> indicates that the first 24 bits are used for network address</li>
+<li>The network address is the bit mask</li>
+<li>The broadcast address is the result of the bitwise and operation of the IP address and the 1s complement of bitmask </li>
+</ul>
+<h3 id="open-systems-interconnection-osi">Open Systems Interconnection (OSI)</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Level</th>
+<th>Description</th>
+<th>Protocol Data Unit (PDU)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical Layer</td>
+<td>1</td>
+<td>Handles the physical connection between devices</td>
+<td>Bit, Symbol</td>
+</tr>
+<tr>
+<td>Data Link Layer</td>
+<td>2</td>
+<td>Transmission of data frames between two adjacent network nodes, e.g. MAC</td>
+<td>Frame</td>
+</tr>
+<tr>
+<td>Network Layer</td>
+<td>3</td>
+<td>Handles packet forwarding including routing through intermediate routers, e.g. IP</td>
+<td>Packet</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>4</td>
+<td>Transmission of data segments in a network, i.e. segmentation, acknowledgement, multiplexing</td>
+<td>Segment, Datagram</td>
+</tr>
+<tr>
+<td>Session</td>
+<td>5</td>
+<td>Manages sessions between end-user applications</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>6</td>
+<td>Translation of data between a networking service and an application; i.e. encoding, compression, encryption/decryption</td>
+<td>Data</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>7</td>
+<td>High-level protocols such as for resource sharing or remote file access, e.g. HTTP.</td>
+<td>Data</td>
+</tr>
+</tbody>
+</table>
+<h2 id="amazon-vpc">Amazon VPC</h2>
+<p>Amazon VPC allows you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define.</p>
+<h3 id="vpc-characteristics">VPC Characteristics</h3>
+<ul>
+<li><strong>Isolation:</strong> Each VPC is isolated from other virtual networks in the AWS Cloud.</li>
+<li><strong>Region-specific:</strong> Resides within a single AWS region.</li>
+<li><strong>Multiple Availability Zones:</strong> Can span multiple Availability Zones within that region.</li>
+</ul>
+<h3 id="subnets">Subnets</h3>
+<ul>
+<li><strong>Division of VPC:</strong> A subnet is a range of IP addresses in your VPC.</li>
+<li><strong>Availability Zone Specific:</strong> A subnet must reside within one Availability Zone and cannot span zones.</li>
+<li><strong>Public or Private:</strong> Depending on the route table and internet gateway settings.</li>
+</ul>
+<h3 id="ip-addressing">IP Addressing</h3>
+<ul>
+<li><strong>CIDR Block Assignment:</strong> Assign a CIDR block to your VPC.</li>
+<li><strong>IPv4 and IPv6:</strong> Supports both IPv4 and IPv6 addresses.</li>
+<li><strong>Non-overlapping Subnets:</strong> Subnet CIDR blocks must not overlap.</li>
+<li>The allowed IPv4 CIDR block size for a subnet is between a /28 netmask and /16 netmask.</li>
+<li>Address range cannot be altered after creation</li>
+</ul>
+<h3 id="reserved-ip-address">Reserved IP Address</h3>
+<ul>
+<li><strong>First Four and Last One:</strong> In each subnet, AWS reserves the first four IP addresses and the last IP address.</li>
+<li><strong>Examples:</strong> In a 10.0.0.0/24 subnet, the addresses 10.0.0.0, 10.0.0.1, 10.0.0.2, 10.0.0.3, and 10.0.0.255 are reserved.</li>
+</ul>
+<h3 id="public-ip-address-types">Public IP Address Types</h3>
+<h4 id="public-ipv4-address">Public IPv4 Address</h4>
+<ul>
+<li><strong>Assignment:</strong> Can be assigned manually (Elastic IP) or automatically (auto-assign at subnet level).</li>
+<li><strong>Use Case:</strong> Required for communication with the internet.</li>
+</ul>
+<h4 id="elastic-ip-address">Elastic IP Address</h4>
+<ul>
+<li><strong>AWS Account Association:</strong> Allocated to an AWS account, and can be remapped.</li>
+<li><strong>Flexibility:</strong> Can be moved between instances.</li>
+<li><strong>Charges:</strong> Additional charges may apply for idle Elastic IPs.</li>
+</ul>
+<h3 id="elastic-network-interface-eni">Elastic Network Interface (ENI)</h3>
+<ul>
+<li><strong>Virtual Network Interface:</strong> Can be attached to instances within a VPC.</li>
+<li><strong>Flexibility:</strong> Can be detached and attached to different instances.</li>
+<li><strong>Attributes:</strong> Include a primary private IP address, one or more secondary private IP addresses, an Elastic IP address, and more.</li>
+<li>Attribiutes follows when attached to new instance</li>
+</ul>
+<h3 id="route-tables-and-routes">Route Tables and Routes</h3>
+<ul>
+<li><strong>Route Table Configuration:</strong> Contains rules for directing network traffic.</li>
+<li><strong>Destination and Target:</strong> Each route in a table specifies a destination and a target.</li>
+<li><strong>Default Route Table:</strong> Every VPC has a default route table for local routing within the VPC.</li>
+<li><strong>Association with Subnets:</strong> Each subnet must be associated with one and only one route table.</li>
+</ul>
+<h2 id="vpc-networking">VPC Networking</h2>
+<h3 id="internet-gateway">Internet Gateway</h3>
+<h3 id="network-address-translation-nat-gateway">Network Address Translation (NAT) Gateway</h3>
+<h3 id="vpc-sharing">VPC Sharing</h3>
+<h3 id="vpc-peering">VPC Peering</h3>
+<h3 id="aws-site-to-site-vpn">AWS Site-to-Site VPN</h3>
+<h3 id="aws-direct-connect">AWS Direct Connect</h3>
+<h3 id="vpc-endpoints">VPC Endpoints</h3>
+<h3 id="aws-transit-gateway">AWS Transit Gateway</h3>
+<h2 id="vpc-security">VPC Security</h2>
+<h3 id="security-groups">Security Groups</h3>
+<ul>
+<li><strong>Instance-Level:</strong> Security groups act at the instance level, controlling inbound and outbound traffic for individual instances.</li>
+<li><strong>Default Rules:</strong> By default, security groups deny all inbound traffic and allow all outbound traffic.</li>
+<li><strong>Stateful:</strong> Security groups are stateful, meaning if you allow inbound traffic from a specific source, the corresponding outbound reply traffic is automatically allowed.</li>
+</ul>
+<h4 id="inbound-rules-table">Inbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Protocol</th>
+<th>Port Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sg-xxx</td>
+<td>All</td>
+<td>All</td>
+<td>Allow inbound traffic from instances assigned to the same security group</td>
+</tr>
+</tbody>
+</table>
+<h4 id="outbound-rules-table">Outbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Protocol</th>
+<th>Port Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0.0.0.0/0</code></td>
+<td>All</td>
+<td>All</td>
+<td>Allow all outbound IPv4 traffic</td>
+</tr>
+<tr>
+<td><code>::/0</code></td>
+<td>All</td>
+<td>All</td>
+<td>Allow all outbound IPv6 traffic</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-security-groups">Custom Security Groups</h3>
+<ul>
+<li><strong>Allow Rules Only:</strong> You can specify allow rules for inbound traffic, but you cannot define deny rules.</li>
+<li><strong>Rule Evaluation:</strong> All rules are evaluated, and if any rule allows the traffic, it is permitted.</li>
+</ul>
+<h4 id="inbound-rules-table_1">Inbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Protocol</th>
+<th align="right">Port Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0.0.0.0/0</code></td>
+<td>TCP</td>
+<td align="right">80</td>
+<td>Allow inbound HTTP access from all IPv4 addresses</td>
+</tr>
+<tr>
+<td><code>0.0.0.0/0</code></td>
+<td>TCP</td>
+<td align="right">443</td>
+<td>Allow inbound HTTPS access from all IPv4 addresses</td>
+</tr>
+<tr>
+<td><code>192.168.1.0/24</code></td>
+<td>TCP</td>
+<td align="right">22</td>
+<td>Allow inbound SSH access to Linux instance from IPv4 IP address in the network</td>
+</tr>
+</tbody>
+</table>
+<h4 id="outbound-rules-table_1">Outbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Protocol</th>
+<th>Port Range</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sg-xxx</td>
+<td>TCP</td>
+<td>1433</td>
+<td>Allow all outbound SQL access to instances in the specified in the security group</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network-access-control-lists-network-acl">Network Access Control Lists (Network ACL)</h3>
+<ul>
+<li><strong>Subnet-Level:</strong> Network ACLs act at the subnet level, controlling traffic for all instances in the subnet.</li>
+<li><strong>Inbound and Outbound Rules:</strong> Network ACLs have separate rules for inbound and outbound traffic.</li>
+<li><strong>Stateless:</strong> Unlike security groups, Network ACLs are stateless, and you must define rules for both directions (inbound and outbound).</li>
+</ul>
+<h4 id="inbound-rules-table_2">Inbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Type</th>
+<th>Protocol</th>
+<th>Port Range</th>
+<th>Source</th>
+<th>Allow/Deny</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>All IPv4 Traffic</td>
+<td>All</td>
+<td>All</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>*</td>
+<td>All IPv4 Traffic</td>
+<td>All</td>
+<td>All</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Deny</td>
+</tr>
+</tbody>
+</table>
+<h4 id="outbound-rules-table_2">Outbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Type</th>
+<th>Protocol</th>
+<th>Port Range</th>
+<th>Source</th>
+<th>Allow/Deny</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>All IPv4 Traffic</td>
+<td>All</td>
+<td>All</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>*</td>
+<td>All IPv4 Traffic</td>
+<td>All</td>
+<td>All</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Deny</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-network-acl">Custom Network ACL</h3>
+<ul>
+<li><strong>Initial Deny:</strong> Custom Network ACLs deny all inbound and outbound traffic until you add explicit allow rules.</li>
+<li><strong>Rule Evaluation:</strong> Rules are evaluated in number order, and the first matching rule decides whether to allow or deny traffic.</li>
+</ul>
+<h4 id="inbound-rules-table_3">Inbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Type</th>
+<th>Protocol</th>
+<th align="right">Port Range</th>
+<th>Source</th>
+<th>Allow/Deny</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>HTTPS</td>
+<td>TCP</td>
+<td align="right">443</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>120</td>
+<td>SSH</td>
+<td>TCP</td>
+<td align="right">22</td>
+<td><code>192.0.2.0/24</code></td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>*</td>
+<td>All IPv4 Traffic</td>
+<td>All</td>
+<td align="right">All</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Deny</td>
+</tr>
+</tbody>
+</table>
+<h4 id="outbound-rules-table_3">Outbound Rules Table</h4>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Type</th>
+<th>Protocol</th>
+<th align="right">Port Range</th>
+<th>Source</th>
+<th>Allow/Deny</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>HTTPS</td>
+<td>TCP</td>
+<td align="right">443</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>120</td>
+<td>SSH</td>
+<td>TCP</td>
+<td align="right">22</td>
+<td><code>192.0.2.0/24</code></td>
+<td>Allow</td>
+</tr>
+<tr>
+<td>*</td>
+<td>All IPv4 Traffic</td>
+<td>All</td>
+<td align="right">All</td>
+<td><code>0.0.0.0/0</code></td>
+<td>Deny</td>
+</tr>
+</tbody>
+</table>
+<h3 id="security-groups-vs-network-acl">Security Groups vs Network ACL</h3>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Security Groups</th>
+<th>Network ACLs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Individual instances</td>
+<td>Subnet level, affecting all instances within it.</td>
+</tr>
+<tr>
+<td>Allow rules</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Deny rules</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Stateful</td>
+<td>Stateless</td>
+</tr>
+<tr>
+<td>Order of Rules</td>
+<td>Evaluated collectively; Unordered.</td>
+<td>Evaluated in ascending order by rule number.</td>
+</tr>
+<tr>
+<td>Default Inbound Behavior</td>
+<td>Deny all inbound traffic</td>
+<td>Allow all inbound</td>
+</tr>
+<tr>
+<td>Default Outbound Behavior</td>
+<td>Allow all outbound traffic</td>
+<td>Allow outbound traffic</td>
+</tr>
+<tr>
+<td>Customization</td>
+<td>Control inbound/outbound traffic control</td>
+<td>Broader subnet-level restrictions</td>
+</tr>
+<tr>
+<td>Use Case</td>
+<td>Managing traffic to individual instances</td>
+<td>Additional layer of defense at the subnet level</td>
+</tr>
+</tbody>
+</table>
+<h2 id="amazon-route-53">Amazon Route 53</h2>
+<ul>
+<li>Highly available and scalable Domain Name System (DNS) web service</li>
+<li>Designed for routing end users to Internet applications by translating domain names into IP addresses.</li>
+<li>Supports both IPv4 and IPv6.</li>
+</ul>
+<h3 id="key-features">Key Features</h3>
+<ul>
+<li><strong>DNS Resolution:</strong> Translates domain names like <code>www.google.com</code> into their corresponding IP addresses.</li>
+<li><strong>Health Checking:</strong> Monitors the health of your resources and routes traffic only to healthy endpoints.</li>
+<li><strong>Traffic Management:</strong> Offers various routing policies for managing traffic globally.</li>
+<li><strong>Domain Registration:</strong> Allows you to register domain names.</li>
+</ul>
+<h3 id="dns-resolution-process">DNS Resolution Process</h3>
+<ol>
+<li>A user, like Bob, requests the IP address of <code>www.google.com</code>.</li>
+<li>The DNS resolver queries Amazon Route 53 for the IP address.</li>
+<li>Route 53 returns the IP address of www.google.com.</li>
+<li>The DNS resolver provides Bob with the IP address.</li>
+</ol>
+<h3 id="amazon-route-53-supported-routing">Amazon Route 53 Supported Routing</h3>
+<ul>
+<li><strong>Simple Routing:</strong> Ideal for single-resource environments.</li>
+<li><strong>Weighted Round Robin Routing:</strong> Assigns weights to route traffic proportionally across multiple resources.</li>
+<li><strong>Latency Routing:</strong> Routes traffic based on the lowest network latency for your end user.</li>
+<li><strong>Geolocation Routing:</strong> Routes traffic based on the geographic location of your users.</li>
+<li><strong>Geoproximity Routing:</strong> Routes traffic based on the geographic location of your resources and users.</li>
+<li><strong>Failover Routing:</strong> Automatically routes traffic to a backup resource when the primary one is unavailable.</li>
+<li><strong>Multivalue Answer Routing:</strong> Responds to DNS queries with multiple healthy resources.</li>
+</ul>
+<h2 id="amazon-cloudfront">Amazon CloudFront</h2>
+<ul>
+<li>Amazon CloudFront is a fast content delivery network (CDN) service</li>
+<li>Securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.</li>
+</ul>
+<h3 id="amazon-cloudfront-key-characteristics">Amazon CloudFront Key Characteristics</h3>
+<ul>
+<li><strong>Global Network:</strong> Consists of edge locations and regional edge caches for efficient content delivery.</li>
+<li><strong>Edge Locations:</strong> Serve popular content directly to users nearby.</li>
+<li><strong>Regional Edge Cache:</strong> Stores less frequently accessed content, acting as an intermediary cache layer.</li>
+<li><strong>Dynamic and Static Content Delivery:</strong> Optimizes the delivery of both static and dynamic content.</li>
+<li><strong>Integration with AWS Services:</strong> Deeply integrated with AWS services like S3, EC2, and AWS Shield for enhanced functionality.</li>
+</ul>
+<h3 id="amazon-cloudfront-benefits">Amazon CloudFront Benefits</h3>
+<ul>
+<li><strong>Performance:</strong> Fast delivery of content with reduced latency.</li>
+<li><strong>Security:</strong> Enhanced security features at the edge locations.</li>
+<li><strong>Programmability:</strong> Customizable and programmable CDN solutions.</li>
+<li><strong>AWS Integration:</strong> Seamless integration with AWS services and infrastructure.</li>
+<li><strong>Cost-Effectiveness:</strong> Pay-as-you-go pricing model, without upfront costs.</li>
+</ul>
+<h3 id="amazon-cloudfront-pricing">Amazon CloudFront Pricing</h3>
+<ul>
+<li><strong>Data Transfer Out:</strong> Based on the volume of data transferred out from CloudFront to end users.</li>
+<li><strong>HTTP(S) Requests:</strong> Charges apply for the number of HTTP(S) requests made.</li>
+<li><strong>Invalidation Requests:</strong> The first 1000 paths each month are free; subsequent paths incur a charge per path.</li>
+<li><strong>Dedicated IP Custom SSL:</strong> Additional charges may apply for custom SSL certificates.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
