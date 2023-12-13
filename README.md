@@ -17,9 +17,8 @@ alex@xxx:~/notes$ mkdocs serve
 INFO    -  Building documentation...
 INFO    -  Cleaning site directory
 INFO    -  Documentation built in 0.10 seconds
-INFO    -  [15:30:07] Watching paths for changes: 'docs', 'mkdocs.yml'
-INFO    -  [15:30:07] Serving on http://127.0.0.1:8000/
-INFO    -  [15:30:39] Browser connected: http://localhost:8000/certified-cloud-practioner/
+INFO    -  [00:00:00] Watching paths for changes: 'docs', 'mkdocs.yml'
+INFO    -  [00:00:00] Serving on http://127.0.0.1:8000/
 ```
 
 ## Deployment
