@@ -1,3 +1,3 @@
 # Notes
 
-1. [Certified Cloud Practioner](certified-clour-practioner.md)
+1. [Certified Cloud Practioner](certified-cloud-practioner/index.md)
